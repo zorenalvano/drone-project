@@ -16,23 +16,23 @@ This is a Spring Boot application that models a drone-based delivery system for 
 ## Build Instructions
 
 1. Build the project using Maven:
-    mvn clean install
+    - mvn clean install
 
 2. If you don't have Maven installed globally, you can also run it using the Maven Wrapper:
-    ./mvnw clean install   # For macOS/Linux
-    mvnw.cmd clean install  # For Windows
+    - ./mvnw clean install   # For macOS/Linux
+    - mvnw.cmd clean install  # For Windows
 
 ## Run the Application
 
 1. Once the build is successful, you can run the application using:
-    mvn spring-boot:run
+    - mvn spring-boot:run
 
 2. Or, if you're using the Maven Wrapper:
-    ./mvnw spring-boot:run   # For macOS/Linux
-    mvnw.cmd spring-boot:run  # For Windows 
+    - ./mvnw spring-boot:run   # For macOS/Linux
+    - mvnw.cmd spring-boot:run  # For Windows 
 
 3. The application will start on port 8080 by default. You can change the port by modifying the application.yml file
-    server:
+    - server:
         port: 8080
 4. After running the application, there are 10 pre-loaded data for drones
 
