@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "e5a10543-9355-4ac1-b244-a9d783152c08",
+		"name": "Drone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9975297"
+	},
+	"item": [
+		{
+			"name": "register_drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serialNumber\": \"SN100\",\r\n    \"model\": \"LIGHTWEIGHT\",\r\n    \"batteryCapacity\": 100,\r\n    \"state\": \"IDLE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/drones/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"drones",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "load_drone",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"First-Aid_Kit\",\r\n    \"weight\": 400,\r\n    \"code\": \"FIC_01\",\r\n    \"imageName\": \"medicine.jpg\",\r\n    \"imageType\": \"image/png\",\r\n    \"imageData\": \"iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCBAMAAACONtR2AAAAJFBMVEUAAAADXjkPaEMPbUcXeFA3NzfGSVTZV2PtkZH1rKz8trb/0tKTygBYAAAAAXRSTlMAQObYZgAAAvlJREFUeNrt20Fq20AYhmG1i9IuS29QeoCALlCIr2Byg3bbjQnkBKU3KL2Bss3Ol4tTFJCILY2kGY0kP+/WSciz+/glF4UkSZIkSZIkSVp1H37U/bw/RUhISEhISHgNwla/CAkJCQkJCa9AeL8NMyEhISEhIeFAYTtCQkJCQkLCaxCuZO4QEhISEhISxhMu10xISEhISEiYUriUkwchISEhISHhfMJ8ZkJCQkJCQsKcwrlOHoSEhISEhISLESacO4SEhISEhITxhIf9qY7PXz6+G/IHH6pmhISEhISEhEmFof/Zf2HHD++b3Q0WHl/bnfpOSEhISEhImFu4vzxuDpGE7cpTN4SEhISEhISThNkiJCQkJCQkzC7se0pBSEhISEhIuBnh4JcPgmvhHl9xT29wty+6NO9iEBISEhISEoY9pSAkJCQkJCRcvLBnr/QJx8+d4OMFISEhISEhYRzhhL0y/tejPa4gJCQkJCQkTC5Me7wgJCQkJCQkjCTMEiEhISEhIeEihOm+hBD/cQUhISEhISHhJGGSLyEQEhISEhISbl2Y5nhBSEhISEhI2Ck8zPiCQnvKEBISEhISEm5P+AYX93hBSEhISEhImPvdxI4pQ0hISEhISLgJYceUiXq8ICQkJCQkJMwkHDdlCAkJCQkJCdcjHDdlJhwvCAkJCQkJCecTVmcLnjKEhISEhISESxZWlwudMlOPF4SEhISEhISphKGwOaYMISEhISEhYTzhQ9XdYFi0KUNISEhISEg4SVgFNA4WdcoQEhISEhIS9gurUY2HxZ8yhISEhISEhI0+/q77M8r0eDzbYFgZfcoQEhISEhISThIeL7ckGCEhISEhIWG/8BjY025oc8EICQkJCQkJG336W/cvFLUb1ewwQkJCQkJCwn7hLlL5YISEhISEhISN3n+t+xbJdFs2K/JHSEhISEhIOElYnu2mWFiEhISEhISE/cLycsU6IiQkJCQkJCyKd5/rvqyaQUhISEhISChJkiRJkrbUM/G5wZNDXbfZAAAAAElFTkSuQmCC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/drones/11/load",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"drones",
+						"11",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get_loaded_medications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/drones/11/medications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"drones",
+						"11",
+						"medications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "drone_availability",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/drones/11/availability",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"drones",
+						"11",
+						"availability"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check_battery",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/drones/11/battery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"drones",
+						"11",
+						"battery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "drone_in_delivered_state_for_scheduler",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"serialNumber\": \"SN200\",\r\n    \"model\": \"HEAVYWEIGHT\",\r\n    \"batteryCapacity\": 100,\r\n    \"state\": \"DELIVERED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/drones/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"drones",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
