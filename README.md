@@ -39,14 +39,14 @@ This is a Spring Boot application that models a drone-based delivery system for 
 ## Run Test
 
 1. To run unit test only, using maven:
-    mvn test
+    - mvn test
 2. Or, running unit test only using the Maven Wrapper:
-    ./mvnw test   # For macOS/Linux
-    mvnw.cmd test  # For Windows 
+    - ./mvnw test   # For macOS/Linux
+    - mvnw.cmd test  # For Windows 
 3. To run unit test and integration test, using maven:
-    mvn verify
+    - mvn verify
 4. Or, running unit test and integration test using the Maven Wrapper:
-    ./mvnw verify   # For macOS/Linux
-    mvnw.cmd verify  # For Windows 
+    - ./mvnw verify   # For macOS/Linux
+    - mvnw.cmd verify  # For Windows 
 
 
