@@ -34,7 +34,6 @@ This is a Spring Boot application that models a drone-based delivery system for 
 3. The application will start on port 8080 by default. You can change the port by modifying the application.yml file
     - server:
         port: 8080
-4. After running the application, there are 10 pre-loaded data for drones
 
 ## Run Test
 
